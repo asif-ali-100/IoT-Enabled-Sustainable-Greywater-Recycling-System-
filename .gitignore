@@ -1,0 +1,28 @@
+# Build artifacts
+build/
+*.bin
+*.elf
+*.map
+*.hex
+
+# Arduino IDE
+*.ino.cpp
+
+# KiCad backups/locks
+hardware/kicad/*-backups/
+hardware/kicad/*.bak
+hardware/kicad/*.kicad_pcb-bak
+hardware/kicad/*.lck
+hardware/kicad/_autosave-*
+fp-info-cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Uncomment if you don't want to publish real credentials:
+# firmware/greywater_system/config.h
