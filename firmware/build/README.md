@@ -19,9 +19,6 @@ Global variables use 46780 bytes (14%) of dynamic memory, leaving 280900 bytes f
 ## ⚠️ Rebuild before real deployment
 This build uses the **placeholder** WiFi SSID/password and Firebase host/token from `config.h` in the committed source. It will compile and run, but it obviously can't reach your actual WiFi/Firebase. **Edit `config.h` with your real credentials and thresholds, then rebuild**, before flashing a physical board.
 
-## ⚠️ About the `.hex` file
-The ESP32 does not use classic Intel HEX for flashing the way AVR-based Arduinos do — Espressif's `esptool.py` flashes raw `.bin` images at specific flash offsets (see table above). The `.hex` here is a straight `objcopy` conversion of the ELF, generated for compatibility with tools/simulators (e.g. some Proteus ESP32 add-on libraries) that specifically expect an Intel HEX file. For real hardware flashing, always use the `.bin` files, not the `.hex`.
-
 ## Flashing to real hardware
 ```bash
 esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 921600 write_flash \
