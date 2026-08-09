@@ -67,12 +67,6 @@ greywater-recycling-esp32/
 │   │   └── README.md
 │   └── images/
 │       └── block_diagram.svg      # System architecture diagram
-├── simulation/
-│   ├── PROTEUS.md                 # Proteus limitations + recommended alternative
-│   └── wokwi/                     # Real, loadable Wokwi simulation project
-│       ├── diagram.json
-│       ├── wokwi.toml             # Points at the real compiled firmware
-│       └── README.md
 ├── LICENSE
 ├── CONTRIBUTING.md
 └── .gitignore
